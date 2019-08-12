@@ -11,8 +11,6 @@ install:
 script: 
  python test.py
 
-after_success:
- - coveralls
 notifications:
   webhooks:
-    - https://stripe-cer-testing.herokuapp.com/api/v1/challenge/check_builds/
+    - https://stripe-app-3.herokuapp.com/api/v1/challenge/check_builds/
